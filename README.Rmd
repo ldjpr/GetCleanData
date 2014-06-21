@@ -1,0 +1,78 @@
+README - Getting and Cleaning Data Course Project Code Book
+========================================================
+
+The script run_analysis.r was created to execute the different tasks involved in order to generated the two tidy data sets required in the project's instructions.
+
+Project Instructions
+-------------------------------------------------------
+Create one R script called run_analysis.R that does the following. 
+* Merges the training and the test sets to create one data set.
+* Extracts only the measurements on the mean and standard deviation for each measurement. 
+* Uses descriptive activity names to name the activities in the data set
+* Appropriately labels the data set with descriptive variable names. 
+* Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+
+Instructions for running the script
+-------------------------------------------------------
+1. Set the working directory to the root the directory that contains the unpacked folders from the zip file: getdata-projectfiles-UCI HAR Dataset.zip. For example: setwd("~/Documents/Coursera/Getting and Cleaning Data") were the folder "Getting and Cleaning Data" contains the data folder: UCI HAR Dataset.
+2. Run the code: source('~/Documents/Coursera/Getting and Cleaning Data/run_analysis.R', echo=TRUE). This will execute the script. You could also load the code and simply execute by entering: run_analysis in the console.
+
+Script explanation
+-------------------------------------------------------
+##Prepare data and create first tidy data set.
+
+1. Load files - The following files are loaded into memory:
+
+* mean.std.vector - A vector with mean and std column names to be used to create a subset.
+
+TEST
+The following data frames are created:
+
+* test_x - features
+* text_y - activity
+* subject_test - subject
+
+TRAIN
+The following data frames are created:
+* train_X - 
+* train_Y
+* train_subject
+
+2. Combine subject, activity and features data into a test and training data frame using the data.frame function.
+* test_data 
+* train_data 
+
+###First objective
+3. Merges the training and the test sets to create one data set.
+* combined_data
+
+4. Remove unwanted columns keeping mean and stds ones.
+* tidyDataSet
+
+5. Prepare column names.
+Iterate mean.std.vector and do a column bind using the column name, subject and activity.
+
+###Second objective
+6. Extracts only the measurements on the mean and standard deviation for each measurement.
+
+###Fourth objective
+7. Appropriately labels the data set with descriptive variable names.
+8. Assign col names.
+
+###Third objective
+9. Uses descriptive activity names to name the activities in the data set
+10. Exports first tidy data set to file system
+
+##Create second tidy data set
+11. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+Create a copy of the first tidy data structure. Then iterate the first data set, tidyDataSet, and insert into new data set the average of features for for each activity by subject. The result will data frame of 180 observations and 68 variables.
+
+12. Exports second tidy data set to file system with the average of each variable for each activity and each subject.
+
+
+
+
+
+
+
+

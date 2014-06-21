@@ -1,0 +1,191 @@
+Getting and Cleaning Data Course Project Code Book
+========================================================
+
+First Tidy Data Set
+-------------------------------------------------------
+
+File name: summTidyDataSet1.txt
+
+Description: Data frame with 10299 observations and 68 variables that contains features measurements performed by 
+30 different subjects based on 6 different activities.
+
+## Transformations
+1. Columns for mean and standard deviation measure were selected including in the name "mean()" or "std()" from
+features.txt.
+2. A test and training data frames were created combining subject, activity and features data files.
+3. A master data frame was created combining test and training data.
+4. A descriptive name was given to subject and activity columns.
+5. An export was performed to save tidy data file in the file system - summTidyDataSet1.txt.
+
+## Column Variables (68)
+1.  Subject (integer) – Identifies the subject or individual. It is a number between 1 and 30 inclusively.
+2.	Activity (character) – Identifies the different activities performed by a subject.  These can be:
+
+* WALKING
+* WALKING_UPSTAIRS
+* WALKING_DOWNSTAIRS
+* SITTING
+* STANDING
+* LAYING
+
+Feature variables (numeric) – The following lists column names of the 66 different feature measures for mean and standard deviation for a measure or a measure of X, Y and Z axis.
+
+3.	tBodyAcc-mean()-X          
+4.	tBodyAcc-mean()-Y
+5.	tBodyAcc-mean()-Z
+6.	tBodyAcc-std()-X           
+7.	tBodyAcc-std()-Y
+8.	tBodyAcc-std()-Z
+9.	tGravityAcc-mean()-X       
+10.	tGravityAcc-mean()-Y
+11.	tGravityAcc-mean()-Z
+12.	tGravityAcc-std()-X        
+13.	tGravityAcc-std()-Y
+14.	tGravityAcc-std()-Z         
+15.	tBodyAccJerk-mean()-X      
+16.	tBodyAccJerk-mean()-Y       
+17.	tBodyAccJerk-mean()-Z       
+18.	tBodyAccJerk-std()-X       
+19.	tBodyAccJerk-std()-Y        
+20.	tBodyAccJerk-std()-Z        
+21.	tBodyGyro-mean()-X         
+22.	tBodyGyro-mean()-Y          
+23.	tBodyGyro-mean()-Z          
+24.	tBodyGyro-std()-X          
+25.	tBodyGyro-std()-Y           
+26.	tBodyGyro-std()-Z           
+27.	tBodyGyroJerk-mean()-X     
+28.	tBodyGyroJerk-mean()-Y      
+29.	tBodyGyroJerk-mean()-Z      
+30.	tBodyGyroJerk-std()-X      
+31.	tBodyGyroJerk-std()-Y       
+32.	tBodyGyroJerk-std()-Z       
+33.	tBodyAccMag-mean()         
+34.	tBodyAccMag-std()           
+35.	tGravityAccMag-mean()       
+36.	tGravityAccMag-std()       
+37.	tBodyAccJerkMag-mean()      
+38.	tBodyAccJerkMag-std()       
+39.	tBodyGyroMag-mean()        
+40.	tBodyGyroMag-std()          
+41.	tBodyGyroJerkMag-mean()     
+42.	tBodyGyroJerkMag-std()     
+43.	fBodyAcc-mean()-X           
+44.	fBodyAcc-mean()-Y           
+45.	fBodyAcc-mean()-Z          
+46.	fBodyAcc-std()-X            
+47.	fBodyAcc-std()-Y            
+48.	fBodyAcc-std()-Z           
+49.	fBodyAccJerk-mean()-X       
+50.	fBodyAccJerk-mean()-Y       
+51.	fBodyAccJerk-mean()-Z      
+52.	fBodyAccJerk-std()-X        
+53.	fBodyAccJerk-std()-Y        
+54.	fBodyAccJerk-std()-Z       
+55.	fBodyGyro-mean()-X          
+56.	fBodyGyro-mean()-Y          
+57.	fBodyGyro-mean()-Z         
+58.	fBodyGyro-std()-X           
+59.	fBodyGyro-std()-Y           
+60.	fBodyGyro-std()-Z          
+61.	fBodyAccMag-mean()          
+62.	fBodyAccMag-std()           
+63.	fBodyBodyAccJerkMag-mean() 
+64.	fBodyBodyAccJerkMag-std()   
+65.	fBodyBodyGyroMag-mean()     
+66.	fBodyBodyGyroMag-std()     
+67.	fBodyBodyGyroJerkMag-mean() 
+68.	fBodyBodyGyroJerkMag-std()
+
+
+Second Tidy Data Set with Averages by Activity and Subject
+-------------------------------------------------------
+
+File name: TidyDataSet2-summTidyDataSet2-SumAvg.txt  
+
+Description: Data set with 180 observations and 68 variables. This data set is a summary of the first data set were the average of each variable for each activity and each subject was calculated.
+
+## Transformations
+1. A copy of the first tidy data structure was copied.
+2. An export was performed to save the independent tidy data file in the file system - summTidyDataSet2-SumAvg.txt.
+
+## Column Variables (68)
+1.  Subject (integer) – Identifies the subject or individual. It is a number between 1 and 30 inclusively.
+2.  Activity (character) – Identifies the different activities performed by a subject.  These can be:
+
+* WALKING
+* WALKING_UPSTAIRS
+* WALKING_DOWNSTAIRS
+* SITTING
+* STANDING
+* LAYING
+
+Feature variables (numeric) – The following lists column names of the 66 different feature measures were the mean was calculated for mean and standard deviation for a measure or a measure of X, Y and Z axis.
+
+3.	tBodyAcc-mean()-X          
+4.	tBodyAcc-mean()-Y
+5.	tBodyAcc-mean()-Z
+6.	tBodyAcc-std()-X           
+7.	tBodyAcc-std()-Y
+8.	tBodyAcc-std()-Z
+9.	tGravityAcc-mean()-X       
+10.	tGravityAcc-mean()-Y
+11.	tGravityAcc-mean()-Z
+12.	tGravityAcc-std()-X        
+13.	tGravityAcc-std()-Y
+14.	tGravityAcc-std()-Z         
+15.	tBodyAccJerk-mean()-X      
+16.	tBodyAccJerk-mean()-Y       
+17.	tBodyAccJerk-mean()-Z       
+18.	tBodyAccJerk-std()-X       
+19.	tBodyAccJerk-std()-Y        
+20.	tBodyAccJerk-std()-Z        
+21.	tBodyGyro-mean()-X         
+22.	tBodyGyro-mean()-Y          
+23.	tBodyGyro-mean()-Z          
+24.	tBodyGyro-std()-X          
+25.	tBodyGyro-std()-Y           
+26.	tBodyGyro-std()-Z           
+27.	tBodyGyroJerk-mean()-X     
+28.	tBodyGyroJerk-mean()-Y      
+29.	tBodyGyroJerk-mean()-Z      
+30.	tBodyGyroJerk-std()-X      
+31.	tBodyGyroJerk-std()-Y       
+32.	tBodyGyroJerk-std()-Z       
+33.	tBodyAccMag-mean()         
+34.	tBodyAccMag-std()           
+35.	tGravityAccMag-mean()       
+36.	tGravityAccMag-std()       
+37.	tBodyAccJerkMag-mean()      
+38.	tBodyAccJerkMag-std()       
+39.	tBodyGyroMag-mean()        
+40.	tBodyGyroMag-std()          
+41.	tBodyGyroJerkMag-mean()     
+42.	tBodyGyroJerkMag-std()     
+43.	fBodyAcc-mean()-X           
+44.	fBodyAcc-mean()-Y           
+45.	fBodyAcc-mean()-Z          
+46.	fBodyAcc-std()-X            
+47.	fBodyAcc-std()-Y            
+48.	fBodyAcc-std()-Z           
+49.	fBodyAccJerk-mean()-X       
+50.	fBodyAccJerk-mean()-Y       
+51.	fBodyAccJerk-mean()-Z      
+52.	fBodyAccJerk-std()-X        
+53.	fBodyAccJerk-std()-Y        
+54.	fBodyAccJerk-std()-Z       
+55.	fBodyGyro-mean()-X          
+56.	fBodyGyro-mean()-Y          
+57.	fBodyGyro-mean()-Z         
+58.	fBodyGyro-std()-X           
+59.	fBodyGyro-std()-Y           
+60.	fBodyGyro-std()-Z          
+61.	fBodyAccMag-mean()          
+62.	fBodyAccMag-std()           
+63.	fBodyBodyAccJerkMag-mean() 
+64.	fBodyBodyAccJerkMag-std()   
+65.	fBodyBodyGyroMag-mean()     
+66.	fBodyBodyGyroMag-std()     
+67.	fBodyBodyGyroJerkMag-mean() 
+68. fBodyBodyGyroJerkMag-std()
+
