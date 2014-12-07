@@ -55,11 +55,11 @@ Iterate mean.std.vector and do a column bind using the column name, subject and 
 ###Second objective
 6. Extracts only the measurements on the mean and standard deviation for each measurement.
 
-###Fourth objective
+###Third objective
 7. Appropriately labels the data set with descriptive variable names.
 8. Assign col names.
 
-###Third objective
+###Fourth objective
 9. Uses descriptive activity names to name the activities in the data set
 10. Exports first tidy data set to file system
 
